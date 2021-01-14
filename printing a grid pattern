@@ -1,0 +1,35 @@
+#pattern
+def pat(n):
+    #loop for rows
+    for i in range(0,n+1,1):
+        #inner loop to print "-"
+        for j in range(0,n+1,1):
+            if i==0 or i%5==0:
+                #if j==0:
+                    #print(end=' + ')
+                if j%5==0:
+                    print(end='+')
+                else:
+                    print(end="~~~")
+            else:
+                if  j%5==0:
+                    print(end="!")
+                else:
+                    print(end="   ")
+        print("\r")
+
+print(pat(10))
+
+output:
+
++~~~~~~~~~~~~+~~~~~~~~~~~~+
+!            !            !
+!            !            !
+!            !            !
+!            !            !
++~~~~~~~~~~~~+~~~~~~~~~~~~+
+!            !            !
+!            !            !
+!            !            !
+!            !            !
++~~~~~~~~~~~~+~~~~~~~~~~~~+
